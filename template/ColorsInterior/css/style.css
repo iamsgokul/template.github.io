@@ -1,0 +1,117 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+a{outline:none}
+@font-face{font-family:'Segoe UI';src:url('../fonts/segorui.ttf');font-weight:400;font-style:normal}
+@font-face{font-family:'Segoe UI';src:url('../fonts/segoeuib.ttf');font-weight:500;font-style:normal}
+@font-face{font-family:'Segoe UI';src:url('../fonts/seguisb.ttf');font-weight:700;font-style:normal}
+h1,h2,h3,h4,h5,h6{font-family:'Dosis'}
+body{font-family:'Segoe UI','Helvetica','Arial',sans-serif;font-weight:400}
+header{width:100%;float:left;background-image:url(../img/Banner.jpeg);background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;height:500px}
+.head-menu-inner{width:100%;float:left}
+.menu-toggle span::before,.menu-toggle span::after{content:'';width:100%;height:100%;background-color:inherit;position:absolute;left:0;-moz-transition-duration:0.2s,0.2s;-o-transition-duration:0.2s,0.2s;-webkit-transition-duration:0.2s,0.2s;-ms-transition-duration:0.2s,0.2s;transition-duration:0.2s,0.2s;-moz-transition-delay:0.2s,0s;-o-transition-delay:0.2s,0s;-webkit-transition-delay:0.2s,0s;-ms-transition-delay:0.2s,0s;transition-delay:0.2s,0s}
+.menu-toggle span{display:block;background-color:#ffffff;width:24px;height:3px;margin-top:-1.5px;font:0/0 a;text-shadow:none;color:transparent;position:absolute;right:8px;top:50%;bottom:auto;left:auto;-moz-transition:background 0.2s ease-in-out;-o-transition:background 0.2s ease-in-out;-webkit-transition:background 0.2s ease-in-out;-ms-transition:background 0.2s ease-in-out;transition:background 0.2s ease-in-out}
+.menu-toggle span::before{top:-8px;-moz-transition-property:top,transform;-o-transition-property:top,transform;-webkit-transition-property:top,transform;-ms-transition-property:top,transform;transition-property:top,transform}
+.menu-toggle span::after{bottom:-8px;-moz-transition-property:bottom,transform;-o-transition-property:bottom,transform;-webkit-transition-property:bottom,transform;-ms-transition-property:bottom,transform;transition-property:bottom,transform}
+nav{width:100%;float:left;padding:10% 0 5%;border-top:1px solid #f0c409;display:none}
+nav ul li a{width:100%;float:left;text-decoration:none;padding:15px 10px;font-weight:600;font-size:16px;text-transform:uppercase;color:#ffffff;transition:.4s}
+nav ul li a:hover{padding-left:15px;border-left:2px solid #f0c409;box-sizing:border-box}
+.container{width:1200px;margin:0 auto;position:relative}
+/*
+.header-shadow{position:absolute;top:0;bottom:0;right:0;left:0;background-color:rgba(0,0,0,0.7)}
+*/
+.header-menu{background:#000000;float:left;padding:0 10px;position:fixed;z-index:99999;width:280px}
+.header-menu .menu-toggle{float:left;width:35px;height:24px;position:relative;top:12px;left:12px}
+.menu-toggle.is-clicked span::before{top:0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.menu-toggle.is-clicked span{background-color:transparent}
+.menu-toggle.is-clicked span::after{bottom:0;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+.menu-toggle.is-clicked span::before,.menu-toggle.is-clicked span::after{background-color:#ffffff;-moz-transition-delay:0s,0.2s;-o-transition-delay:0s,0.2s;-webkit-transition-delay:0s,0.2s;-ms-transition-delay:0s,0.2s;transition-delay:0s,0.2s}
+.header-menu h1{font-weight:600;font-size:24px;float:left;line-height:2;color:#f0c409;padding:0 20px}
+.header-shadow{position:absolute;width:100%;height:100%;opacity:0.8;background:#0a0a0a}
+.banner-text{float:left;width:100%;text-align:center;padding:10% 0 5%}
+.banner-text h4{font-size:20px;font-weight:400;color:#ffffff;line-height:1.8;letter-spacing:7px}
+.banner-text h1{font-size:55px;font-weight:300;color:#ffffff;line-height:2.5;letter-spacing:7px}
+.banner-text h2{font-size:30px;font-weight:600;color:#ffffff;line-height:2;letter-spacing:7px}
+.banner-text a{color:#ffffff;text-decoration:none;font-size:20px;font-weight:600;letter-spacing:2px;position:relative;top:40px;border:3px solid #ffffff;padding:12px 25px;border-radius:2px;font-family:'Dosis'}
+.banner-text a img{position:relative;top:8px;left:12px;width:28px}
+.banner-text a:hover{border:3px solid #f0c409}
+.aboutus{background-color:#f0c409;width:100%;float:left;text-align:center;padding:5% 0}
+.aboutus h1{color:#1a2530;font-size:30px;font-weight:600;letter-spacing:3px;margin:20px 0 10px;outline:none}
+.aboutus .innerabt{width:80%;margin:2% 10%}
+.aboutus .innerabt p{color:#1a2530;font-size:18px;font-weight:400;line-height:1.4}
+.services{width:100%;float:left;background:#000000;padding:5% 0}
+.services-title{width:100%;float:left;text-align:center;padding:2% 0 5%}
+.services-title h1{color:#ffffff;font-size:30px;font-weight:600;letter-spacing:3px;margin:20px 0 10px;text-transform:uppercase}
+.feature-points{width:100%;float:left}
+.services-info{width:50%;float:left;padding:3% 4%;box-sizing:border-box}
+.services-info i{color:#ffffff;font-size:60px;width:80px;height:80px;border-radius:50%;padding:10px;border:2px solid #ffffff;display:block;box-sizing:border-box;text-align:center;margin:0 auto}
+.services-info h1{font-weight:300;font-size:24px;color:#eceff3;line-height:3;text-indent:20px;letter-spacing:4px;text-align:center}
+.services-info p{font-size:16px;color:#eceff3;line-height:1.5}
+/*--Testominal Section--*/
+.testominal{width:100%;float:left;position:relative;background-image:url(../img/testmonial.jpeg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:center}
+.testominal .item-box{width:100%;float:left;text-align:center}
+.item-box .testmonial-box p{width:100%;margin:2% 0;line-height:1.8;font-size:16px;color:#eceff3;padding:0 15%;box-sizing:border-box;text-align:left;position:relative}
+.item-box .testmonial-box p:before{content:'"';font-family:'Times New Roman';font-weight:600;font-size:80px;position:absolute;top:0;line-height:15px;color:#f0c409}
+.item-box .testmonial-box span{font-size:26px;line-height:1.8;font-weight:600;color:#eceff3}
+.testmonial-shadow{position:absolute;width:100%;height:100%;opacity:0.8;background:#0a0a0a}
+.testmonial-title{width:100%;float:left;text-align:center;padding:2% 0 5%}
+.testmonial-title h1{color:#ffffff;font-size:30px;font-weight:600;letter-spacing:3px;margin:20px 0 10px;text-transform:uppercase}
+.view{width:100%;float:left;background:#f0c409;padding:5% 0}
+.view-title{width:100%;float:left;text-align:center;padding:2% 0 5%}
+.view-title h1{color:#1a2530;font-size:30px;font-weight:600;letter-spacing:3px;margin:20px 0 10px;text-transform:uppercase}
+.view-grid{width:100%}
+.view-images{width:50%;position:relative;overflow:hidden}
+.view-images:nth-child(2),.view-images:nth-child(4),.view-images:nth-child(6),.view-images:nth-child(8){float:right}
+.view-images:first-child,.view-images:nth-child(3),.view-images:nth-child(5),.view-images:nth-child(7){float:left}
+.view-images .grid-over{position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(234,196,1,0.54);text-align:center;display:block}
+.view-images:hover .grid-over{display:none}
+.view-images:hover img{-moz-transform:scale(1.1);-webkit-transform:scale(1.1);transform:scale(1.1);-moz-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out}
+.grid-over span{color:#1a2530;text-align:center;vertical-align:middle;font-weight:600;font-size:1.5rem;text-transform:uppercase;padding:30% 0;display:block;box-sizing:border-box;font-family:'Dosis'}
+.view-images img{width:100%;margin-bottom:-2px;-moz-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out}
+.contact{background-color:#161616;width:100%;float:left;padding:3% 0}
+.contact-title{width:100%;float:left;text-align:center}
+.contact-title h1{color:#eceff3;font-size:30px;font-weight:300;line-height:2.5}
+.contact-info{width:100%;float:left;padding-bottom:5%}
+.contact-sect{width:33.333%;float:left;text-align:center}
+.contact-sect img{width:50px;height:50px}
+.contact-sect h4{color:#eceff3;font-weight:600;font-size:18px;line-height:2.8}
+.contact-sect p{color:#eceff3;font-weight:400;font-size:18px;line-height:1.6}
+.footer-link{border-top:1px solid #eceff3;float:left;width:100%;text-align:center}
+.footer-link p{color:#eceff3;line-height:4}
+.footer-link p a{color:#eceff3}
+.type-form-section{width:100%;float:left;text-align:center;padding:4% 0%;box-sizing:border-box;background-color:#f0c409}
+.type-form-section .modal-open{color:#161616;padding:10px 30px;border:2px solid #161616;border-radius:2px;text-decoration:none;font-size:20px;font-family:'Dosis'}
+.type-form-section .modal-open:hover{background-color:#161616;color:#ffffff;box-shadow:0 5px 5px rgba(0,0,0,0.62)}
+.modal-back-shadow,.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:rgba(0,0,0,0.79)}
+.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:none;overflow:auto;-webkit-overflow-scrolling:touch;outline:0}
+.modal-container{width:80%;margin:2% auto}
+.modal-inner{float:left;width:100%}
+.modal-title{float:right;position:relative;top:30px;right:-45px}
+.modal-title img{width:30px;position:relative}
+.modal-title h1{float:left;font-size:12pt;padding:8px;color:#656565}
+.modal-title a{float:right;font-size:23pt;color:#656565}
+.modal-body{width:100%;min-height:300px;float:left}
+.form-desing{background-color:#f0c409;height:520px}
+.form-desing h2{font-size:35px;margin:5% 0 0;font-weight:300;float:left;display:block;width:100%}
+.form-desing h5{font-size:25px;margin:2% 0 0;font-weight:300;float:left;display:block;width:100%}
+.contact-from{width:100%;float:left;padding:5% 0 0}
+.contact-from input,.contact-from textarea{width:80%;float:left;margin:5px 10% 20px;box-sizing:border-box;border:1px solid #161616;font-size:15px;padding:8px 10px;outline:none;font-family:'Dosis';background-color:transparent;font-size:18px}
+.contact-from textarea{resize:none;height:80px}
+.contact-from textarea::-webkit-input-placeholder,.contact-from input::-webkit-input-placeholder{color:#333333}
+.contact-from textarea::-moz-placeholder,.contact-from input::-moz-placeholder{color:#333333}
+.contact-from textarea:-ms-input-placeholder,.contact-from input:-ms-input-placeholder{color:#333333}
+.contact-from textarea:-moz-placeholder,.contact-from input:-moz-placeholder{color:#333333}
+.contacr-btn-container{width:100%;float:left;text-align:center}
+.contacr-btn-container button{font-weight:400;display:inline-block;padding:10px 20px;margin:10px auto 10px;font-size:18px;border:2px solid #161616;border-radius:2px;background-color:transparent;color:#161616;cursor:pointer;outline:none;font-family:'Dosis';text-transform:uppercase}
+.contacr-btn-container button:hover{background-color:#161616;color:#ffffff;box-shadow:0 5px 5px rgba(0,0,0,0.62)}
+.popup-comes{overflow:hidden;margin-right:18px}
+.gtop{background-color:#f0c409;padding:0;position:fixed;bottom:15px;right:20px;border-radius:2px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);text-decoration:none;padding:3px;border-radius:50%;width:30px;height:30px;box-sizing:border-box}
+.gtop img{width:25px;height:25px}
+@media screen and (max-width:1150px){.container{width:80%}}
+@media screen and (max-width:940px){.banner-text h1{font-size:40px;line-height:1.8}.banner-text h2{font-size:25px}.services-info{width:100%}.contact-sect{width:100%;margin-bottom:25px}}
+@media screen and (max-width:520px){.banner-text h1{line-height:1.5}.banner-text h2{font-size:20px}.type-form-section .modal-open{font-size:14px}}
